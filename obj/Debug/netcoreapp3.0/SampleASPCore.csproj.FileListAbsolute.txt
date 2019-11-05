@@ -122,3 +122,4 @@ C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.MvcApplicat
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Homes\Index.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Homes\IndexHitung.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Homes\GetData.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Index.cshtml.g.cs

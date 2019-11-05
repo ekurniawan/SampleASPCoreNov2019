@@ -4,15 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SampleASPCore.Data;
 
 namespace SampleASPCore.Controllers
 {
     public class RestaurantController : Controller
     {
+        private IRestaurantData _resto;
+        public RestaurantController(IRestaurantData resto)
+        {
+            _resto = resto;
+        }
+
         // GET: Restaurant
         public ActionResult Index()
         {
-            return View();
+            var models = _resto.GetAll();
+            return View(models);
         }
 
         // GET: Restaurant/Details/5

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<SampleASPCore.Models.Restaurant>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Restaurant Data</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+        @foreach(var resto in Model)
+        {
+            <tr>
+                <td>@resto.Id</td>
+                <td>@resto.Name</td>
+                <td>@resto.Address</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
