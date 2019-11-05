@@ -12,6 +12,7 @@
                     <td>Name</td>
                     <td>Address</td>
                     <td></td>
+                    <td></td>
                 </tr>
             </thead>
             <tbody>
@@ -22,6 +23,7 @@
                         <td>@resto.Name</td>
                         <td>@resto.Address</td>
                         <td><a href="/Restaurant/Details/@resto.Id">detail</a></td>
+                        <td><a asp-action="Edit" asp-route-id="@resto.Id">edit</a></td>
                     </tr>
                 }
             </tbody>
