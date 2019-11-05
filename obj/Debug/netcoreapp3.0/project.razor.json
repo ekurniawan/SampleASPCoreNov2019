@@ -14342,6 +14342,22 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "SampleASPCore",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "Views\\Home\\Hello.cshtml",
+      "TargetPath": "Views\\Home\\Hello.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Homes\\Index.cshtml",
+      "TargetPath": "Views\\Homes\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

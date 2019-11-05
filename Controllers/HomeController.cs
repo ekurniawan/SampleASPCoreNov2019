@@ -7,14 +7,17 @@ namespace SampleASPCore.Controllers
     public class HomeController : Controller
     {
         private IConfiguration _config;
-        public HomeController(IConfiguration config)
+        private IGreeter _greeter;
+
+        public HomeController(IConfiguration config,IGreeter greeter)
         {
             _config = config;
+            _greeter = greeter;
         }
         //[Route("Index")]
-        public IActionResult Index(string myid,string nama)
+        public IActionResult Index()
         {
-            return Content($"Hello Nama anda: {nama} dan ID: {myid}");
+            return Content(_greeter.GetMessageOfTheDay());
         }
 
         public IActionResult About()
@@ -23,10 +26,9 @@ namespace SampleASPCore.Controllers
             return Content($"Data Config: {dataConfig}");
         }
 
-
         //[Route("Dokumen/Contact")]
         public IActionResult Contact(){
-            return Content("Contact");
+            return View("Hello");
         }
      
     }

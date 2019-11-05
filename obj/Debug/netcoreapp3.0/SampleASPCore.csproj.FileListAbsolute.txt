@@ -16,3 +16,16 @@ C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.AssemblyInf
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.RazorTargetAssemblyInfo.cache
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.dll
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.pdb
+C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\SampleASPCore.Views.dll
+C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\SampleASPCore.Views.pdb
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.RazorAssemblyInfo.cache
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.RazorAssemblyInfo.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.TagHelpers.input.cache
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.TagHelpers.output.cache
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.RazorCoreGenerate.cache
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.RazorTargetAssemblyInfo.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.Views.pdb
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.csproj.CopyComplete
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Homes\Index.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Home\Hello.cshtml.g.cs
