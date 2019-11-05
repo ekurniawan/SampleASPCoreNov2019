@@ -7,6 +7,7 @@ namespace SampleASPCore
 {
     public class Greeter : IGreeter
     {
+        //implementasi
         public string GetMessageOfTheDay()
         {
             return "Greetings from ASP Core";
