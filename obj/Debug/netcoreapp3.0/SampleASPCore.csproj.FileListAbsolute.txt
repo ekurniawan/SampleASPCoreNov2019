@@ -125,3 +125,4 @@ C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Homes\GetData
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Index.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Details.cshtml.g.cs
