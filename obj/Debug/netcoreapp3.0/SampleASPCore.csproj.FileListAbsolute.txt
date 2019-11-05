@@ -126,3 +126,4 @@ C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\In
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Details.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\GetRestoWithCust.cshtml.g.cs

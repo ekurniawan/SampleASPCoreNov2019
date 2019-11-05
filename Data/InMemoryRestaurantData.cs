@@ -31,6 +31,7 @@ namespace SampleASPCore.Data
 
         public Restaurant GetById(int id)
         {
+            //var result = listRestaurant.Where(r => r.Id == id).SingleOrDefault();
             var data = (from r in listRestaurant
                         where r.Id == id
                         select r).SingleOrDefault();

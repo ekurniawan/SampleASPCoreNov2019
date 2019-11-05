@@ -1,0 +1,16 @@
+﻿@model SampleASPCore.Models.ViewModels.RestaurantViewModel
+
+@{
+    ViewData["Title"] = "GetRestoWithCust";
+}
+
+<h1>Get Resto With Cust</h1>
+
+<ul>
+    @foreach(var resto in Model.Restaurant)
+    {
+        <li>@resto.Name</li>
+    }
+</ul>
+
+<p>Customer Name: @Model.Customer.CustName</p>

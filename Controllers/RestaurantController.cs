@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SampleASPCore.Data;
+using SampleASPCore.Models;
+using SampleASPCore.Models.ViewModels;
 
 namespace SampleASPCore.Controllers
 {
@@ -21,6 +23,21 @@ namespace SampleASPCore.Controllers
         {
             var models = _resto.GetAll();
             return View(models);
+        }
+
+        public ActionResult GetRestoWithCust()
+        {
+            RestaurantViewModel restoViewModel = new RestaurantViewModel
+            {
+                Restaurant = _resto.GetAll(),
+                Customer = new Customer
+                {
+                    CustID=1,
+                    CustName="Erick Kurniawan"
+                }
+            };
+
+            return View(restoViewModel);
         }
 
         // GET: Restaurant/Details/5
