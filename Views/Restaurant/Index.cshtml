@@ -1,31 +1,35 @@
 ﻿@model IEnumerable<SampleASPCore.Models.Restaurant>
 
-@{
-    Layout = null;
+@section CssFile{
+    <link href="~/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+}
+<div class="row">
+    <div class="col-md-6">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Address</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var resto in Model)
+                {
+                    <tr>
+                        <td>@resto.Id</td>
+                        <td>@resto.Name</td>
+                        <td>@resto.Address</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/sbadmin2/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="~/sbadmin2/js/demo/datatables-demo.js"></script>
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Restaurant Data</title>
-</head>
-<body>
-    <table border="1">
-        <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Address</td>
-        </tr>
-        @foreach(var resto in Model)
-        {
-            <tr>
-                <td>@resto.Id</td>
-                <td>@resto.Name</td>
-                <td>@resto.Address</td>
-            </tr>
-        }
-    </table>
-</body>
-</html>

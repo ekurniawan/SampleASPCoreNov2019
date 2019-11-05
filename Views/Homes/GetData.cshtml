@@ -1,19 +1,10 @@
 ﻿@using SampleASPCore.Models
 
 @{
-    Layout = null;
     var resto = (Restaurant)ViewData["resto"];
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Restaurant Data</title>
-</head>
-<body>
-    <h2>Data Resto</h2>
-    <p>Id: @resto.Id dan Nama: @resto.Name dan alamat: @resto.Address</p>
-</body>
-</html>
+<h2>Data Resto</h2>
+<p>Id: @resto.Id dan Nama: @resto.Name dan alamat: @resto.Address</p>
+
