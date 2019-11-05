@@ -9,5 +9,6 @@ namespace SampleASPCore.Data
     public interface IRestaurantData
     {
         public IEnumerable<Restaurant> GetAll();
+        public Restaurant GetById(int id);
     }
 }

@@ -26,7 +26,8 @@ namespace SampleASPCore.Controllers
         // GET: Restaurant/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var model = _resto.GetById(id);
+            return View(model);
         }
 
         // GET: Restaurant/Create
