@@ -5,8 +5,15 @@ namespace SampleASPCore.Controllers
 {
     public class HomesController : Controller
     {
-        public IActionResult Index(){
+        public IActionResult Index()
+        {
             return View();
+        }
+
+        public IActionResult IndexHitung(double bil1, double bil2)
+        {
+            double hasil = bil1*bil2;
+            return Content($"Hasilnya : {hasil}");
         }
     }
 

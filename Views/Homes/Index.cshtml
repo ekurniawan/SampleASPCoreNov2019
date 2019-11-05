@@ -1,12 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width" />
+    <title>Form Kalkulator</title>
 </head>
 <body>
-    <h2>About Page</h2>
+    <form action="/Homes/IndexHitung" method="get">
+        <label>Bilangan 1 :</label><br />
+        <input type="text" name="bil1" value="" /><br /><br />
+        <label>Bilangan 2 :</label><br />
+        <input type="text" name="bil2" value="" /><br /><br />
+        <input type="submit" name="submit" value="Hitung" />
+    </form>
 </body>
 </html>
