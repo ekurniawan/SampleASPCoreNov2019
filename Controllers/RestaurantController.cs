@@ -56,13 +56,18 @@ namespace SampleASPCore.Controllers
         // POST: Restaurant/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(RestoViewModel resto)
         {
+            var model = new Restaurant
+            {
+                Name = resto.Name,
+                Address = resto.Address
+            };
+
             try
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction(nameof(Index));
+                var data = await _resto.Insert(model);
+                return RedirectToAction("Index");
             }
             catch
             {
