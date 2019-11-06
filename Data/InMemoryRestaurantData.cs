@@ -20,6 +20,11 @@ namespace SampleASPCore.Data
             };
         }
 
+        public Task Delete(string id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
             //var data = listRestaurant.OrderBy(r => r.Name);
@@ -36,6 +41,31 @@ namespace SampleASPCore.Data
                         where r.Id == id
                         select r).SingleOrDefault();
             return data;
+        }
+
+        public Task<Restaurant> GetById(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Restaurant>> GetFancyResto()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Insert(Restaurant obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Update(Restaurant obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IEnumerable<Restaurant>> ICrud<Restaurant>.GetAll()
+        {
+            throw new NotImplementedException();
         }
     }
 }
