@@ -4,7 +4,14 @@
     <link href="~/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 }
 <div class="row">
+    <div class="col-md-12">
+        @if (ViewData["pesan"] != null)
+        {
+            @Html.Raw(ViewData["pesan"]);
+        }
+    </div>
     <div class="col-md-6">
+        <br />
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>

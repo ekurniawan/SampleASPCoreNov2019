@@ -21,6 +21,11 @@ namespace SampleASPCore.Controllers
         // GET: Restaurant
         public async Task<ActionResult> Index()
         {
+            if (TempData["pesan"] != null)
+            {
+                ViewData["pesan"] = TempData["pesan"];
+            }
+
             var models = await _resto.GetAll();
             return View(models);
         }
@@ -76,24 +81,26 @@ namespace SampleASPCore.Controllers
         }
 
         // GET: Restaurant/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var data = await _resto.GetById(id.ToString());
+            return View(data);
         }
 
         // POST: Restaurant/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(Restaurant resto)
         {
             try
             {
-                // TODO: Add update logic here
-
+                var data = await _resto.Update(resto);
+                TempData["pesan"] = "<div class='alert alert-success'>Data berhasil diupdate</div>";
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
+                ViewData["pesan"] = $"<div class='alert alert-danger'>data gagal diupdate {ex.Message}</div>";
                 return View();
             }
         }
