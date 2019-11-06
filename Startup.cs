@@ -20,7 +20,7 @@ namespace SampleASPCore
             services.AddControllersWithViews();
             //DI
             services.AddSingleton<IGreeter, Salam>();
-            services.AddSingleton<IRestaurantData, InMemoryRestaurantData>();
+            services.AddSingleton<IRestaurantData, RestaurantDAL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
