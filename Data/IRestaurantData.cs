@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace SampleASPCore.Data
 {
-    public interface IRestaurantData
+    public interface IRestaurantData : ICrud<Restaurant>
     {
-        public IEnumerable<Restaurant> GetAll();
-        public Restaurant GetById(int id);
+        Task<IEnumerable<Restaurant>> GetFancyResto();
     }
 }

@@ -21,7 +21,7 @@ namespace SampleASPCore.Data
             return _config.GetConnectionString("DefaultConnection");
         }
 
-        public IEnumerable<Restaurant> GetAll()
+        /*public IEnumerable<Restaurant> GetAll()
         {
             List<Restaurant> lstRestaurant = new List<Restaurant>();
             using(SqlConnection conn = new SqlConnection(GetConnectionString()))
@@ -47,9 +47,9 @@ namespace SampleASPCore.Data
                 conn.Close();
             }
             return lstRestaurant;
-        }
+        }*/
 
-        public Restaurant GetById(int id)
+        /*public Restaurant GetById(int id)
         {
             Restaurant resto = null;
             using (SqlConnection conn = new SqlConnection(GetConnectionString()))
@@ -76,6 +76,36 @@ namespace SampleASPCore.Data
             }
 
             return resto;
+        }*/
+
+        public Task<IEnumerable<Restaurant>> GetFancyResto()
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IEnumerable<Restaurant>> ICrud<Restaurant>.GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Restaurant> GetById(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Insert(Restaurant obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Update(Restaurant obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task Delete(string id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
