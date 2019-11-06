@@ -1,4 +1,5 @@
 ﻿using SampleASPCore.Models;
+using SampleASPCore.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,6 @@ namespace SampleASPCore.Data
 {
     public interface IRestaurantData : ICrud<Restaurant>
     {
-        Task<IEnumerable<Restaurant>> GetFancyResto();
+        Task<IEnumerable<ViewRestoWithCategory>> GetFancyResto();
     }
 }

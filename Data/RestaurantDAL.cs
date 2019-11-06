@@ -6,6 +6,7 @@ using SampleASPCore.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Data.SqlClient;
 using Dapper;
+using SampleASPCore.Models.ViewModels;
 
 namespace SampleASPCore.Data
 {
@@ -79,9 +80,14 @@ namespace SampleASPCore.Data
             return resto;
         }*/
 
-        public Task<IEnumerable<Restaurant>> GetFancyResto()
+        public async Task<IEnumerable<ViewRestoWithCategory>> GetFancyResto()
         {
-            throw new NotImplementedException();
+            using (SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                string strSql = @"select * from ViewRestoWithCategory";
+                var results = await conn.QueryAsync<ViewRestoWithCategory>(strSql);
+                return results;
+            }
         }
 
         public async Task<Restaurant> GetById(string id)
