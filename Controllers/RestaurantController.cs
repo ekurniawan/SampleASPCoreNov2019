@@ -19,17 +19,17 @@ namespace SampleASPCore.Controllers
         }
 
         // GET: Restaurant
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            var models = _resto.GetAll();
+            var models = await _resto.GetAll();
             return View(models);
         }
 
-        public ActionResult GetRestoWithCust()
+        public async Task<ActionResult> GetRestoWithCust()
         {
             RestaurantViewModel restoViewModel = new RestaurantViewModel
             {
-                Restaurant = _resto.GetAll(),
+                Restaurant = await _resto.GetAll(),
                 Customer = new Customer
                 {
                     CustID=1,
@@ -41,9 +41,9 @@ namespace SampleASPCore.Controllers
         }
 
         // GET: Restaurant/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            var model = _resto.GetById(id);
+            var model = await _resto.GetById(id.ToString());
             return View(model);
         }
 

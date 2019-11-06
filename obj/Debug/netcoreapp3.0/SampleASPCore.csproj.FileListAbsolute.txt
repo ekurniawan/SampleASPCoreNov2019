@@ -7,7 +7,6 @@ C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\SampleASPCore.runtimeconf
 C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\SampleASPCore.runtimeconfig.dev.json
 C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\SampleASPCore.dll
 C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\SampleASPCore.pdb
-C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.csprojAssemblyReference.cache
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\staticwebassets\SampleASPCore.StaticWebAssets.Manifest.cache
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\staticwebassets\SampleASPCore.StaticWebAssets.xml
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.AssemblyInfoInputs.cache
@@ -127,3 +126,8 @@ C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\_ViewStart.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Details.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\GetRestoWithCust.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Workshop\2019\SampleASPCore\bin\Debug\netcoreapp3.0\Dapper.dll
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.csprojAssemblyReference.cache
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Create.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs

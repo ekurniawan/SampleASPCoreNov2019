@@ -9,8 +9,8 @@ namespace SampleASPCore.Data
     {
         Task<IEnumerable<T>> GetAll();
         Task<T> GetById(string id);
-        Task Insert(T obj);
-        Task Update(T obj);
+        Task<T> Insert(T obj);
+        Task<T> Update(T obj);
         Task Delete(string id);
     }
 }

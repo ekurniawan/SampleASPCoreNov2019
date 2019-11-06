@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using SampleASPCore.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Data.SqlClient;
+using Dapper;
 
 namespace SampleASPCore.Data
 {
@@ -83,22 +84,51 @@ namespace SampleASPCore.Data
             throw new NotImplementedException();
         }
 
-        Task<IEnumerable<Restaurant>> ICrud<Restaurant>.GetAll()
+        public async Task<Restaurant> GetById(string id)
         {
-            throw new NotImplementedException();
+            using(SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                string strSql = @"select * from Restaurants where Id=@Id";
+                var par = new { Id = id };
+                var result = await conn.QuerySingleAsync<Restaurant>(strSql, par);
+                if (result != null)
+                {
+                    return result;
+                }
+                else
+                {
+                    throw new Exception("Error: data tidak ditemukan..");
+                }
+            }
         }
 
-        public Task<Restaurant> GetById(string id)
+        public async Task<Restaurant> Insert(Restaurant obj)
         {
-            throw new NotImplementedException();
+            using(SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                string strSq = @"insert into Restaurants(Name,Address) values(@Name,@Address)";
+                try
+                {
+                    var param = new { Name = obj.Name, Address = obj.Address };
+                    int result = await conn.ExecuteAsync(strSq, param);
+                    if (result == 1)
+                    {
+                        return obj;
+                    }
+                    else
+                    {
+                        throw new Exception("Tambah data gagal");
+                    }
+                }
+                catch (SqlException sqlEx)
+                {
+                    throw new Exception(sqlEx.Message);
+                }
+            }
+            
         }
 
-        public Task Insert(Restaurant obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(Restaurant obj)
+        public Task<Restaurant> Update(Restaurant obj)
         {
             throw new NotImplementedException();
         }
@@ -106,6 +136,17 @@ namespace SampleASPCore.Data
         public Task Delete(string id)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<Restaurant>> GetAll()
+        {
+            using(SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                string strSql = @"select * from Restaurants order by Name asc";
+                var results = await conn.QueryAsync<Restaurant>(strSql);
+
+                return results;
+            }
         }
     }
 }

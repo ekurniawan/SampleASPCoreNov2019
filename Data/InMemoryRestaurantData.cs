@@ -67,5 +67,15 @@ namespace SampleASPCore.Data
         {
             throw new NotImplementedException();
         }
+
+        Task<Restaurant> ICrud<Restaurant>.Insert(Restaurant obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Restaurant> ICrud<Restaurant>.Update(Restaurant obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
