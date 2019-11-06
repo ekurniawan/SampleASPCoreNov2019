@@ -132,3 +132,4 @@ C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\SampleASPCore.csprojAssem
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Create.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Edit.cshtml.g.cs
+C:\Workshop\2019\SampleASPCore\obj\Debug\netcoreapp3.0\Razor\Views\Restaurant\Delete.cshtml.g.cs

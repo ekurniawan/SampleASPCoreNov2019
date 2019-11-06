@@ -154,9 +154,20 @@ namespace SampleASPCore.Data
             }
         }
 
-        public Task Delete(string id)
+        public async Task Delete(string id)
         {
-            throw new NotImplementedException();
+            using (SqlConnection conn = new SqlConnection(GetConnectionString()))
+            {
+                string strSql = @"delete from Restaurants where Id=@Id";
+                try
+                {
+                    await conn.ExecuteAsync(strSql, new { Id = id });
+                }
+                catch (SqlException sqlEx)
+                {
+                    throw new Exception(sqlEx.Message);
+                }
+            }
         }
 
         public async Task<IEnumerable<Restaurant>> GetAll()
